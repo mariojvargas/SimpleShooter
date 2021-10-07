@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "SimpleShooterEditor Editor Mac Development (SimpleShooter)",
+            "intelliSenseMode": "macos-clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerPath": "/usr/bin/clang++",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/Shared/Epic Games/UE_4.27/Engine/Source/**"
+            ],
+            "forcedInclude": []
+        },
+        {
+            "name": "Mac",
+            "intelliSenseMode": "macos-clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerPath": "/usr/bin/clang++",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/Shared/Epic Games/UE_4.27/Engine/Source/**"
+            ],
+            "forcedInclude": [
+                "/Users/mario/Documents/Unreal Projects/SimpleShooter/Intermediate/Build/Mac/x86_64/UE4Editor/Development/SimpleShooter/Definitions.SimpleShooter.h",
+                "/Users/mario/Documents/Unreal Projects/SimpleShooter/Intermediate/Build/Mac/x86_64/SimpleShooterEditor/Development/Engine/SharedPCH.Engine.ShadowErrors.h"
+            ]
+        }
+    ],
+    "version": 4
+}
