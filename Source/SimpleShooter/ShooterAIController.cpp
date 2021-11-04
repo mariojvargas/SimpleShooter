@@ -22,7 +22,7 @@ void AShooterAIController::Tick(float DeltaTime)
     APawn* PlayerPawn = GetMainPlayerPawn();
     if (PlayerPawn)
     {
-        MoveToActor(PlayerPawn);
+        MoveToActor(PlayerPawn, 200);
     }
 }
 
