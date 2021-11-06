@@ -22,8 +22,8 @@ protected:
     virtual void BeginPlay() override;
 
 private:
-    APawn* GetMainPlayerPawn() const;
-
     UPROPERTY(EditAnywhere)
-    float AcceptanceRadius = 200;
+    class UBehaviorTree* AIBehavior = nullptr;
+
+    APawn* GetMainPlayerPawn() const;
 };
