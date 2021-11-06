@@ -23,4 +23,7 @@ protected:
 
 private:
     APawn* GetMainPlayerPawn() const;
+
+    UPROPERTY(EditAnywhere)
+    float AcceptanceRadius = 200;
 };
