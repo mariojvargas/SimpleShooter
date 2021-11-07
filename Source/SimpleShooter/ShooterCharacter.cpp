@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ShooterCharacter.h"
+#include "Components/CapsuleComponent.h"
 #include "Gun.h"
 
 // Sets default values
@@ -82,6 +83,12 @@ float AShooterCharacter::TakeDamage(float DamageAmount, struct FDamageEvent cons
     Health -= DamageToApply;
     
     UE_LOG(LogTemp, Warning, TEXT("Damage Taken - Current Health: %f"), Health);
+    
+    if (IsDead())
+    {
+        DetachFromControllerPendingDestroy();
+        GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    }
 
     return DamageToApply;
 }
