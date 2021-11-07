@@ -3,6 +3,7 @@
 #include "Gun.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "CollisionQueryParams.h"
 #include "DrawDebugHelpers.h"
 
 #define OUT
@@ -37,16 +38,18 @@ void AGun::PullTrigger()
         return;
     }
 
-    // void AController::GetPlayerViewPoint( FVector& out_Location, FRotator& out_Rotation ) const
     FVector Location;
     FRotator Rotation;
     OwnerController->GetPlayerViewPoint(OUT Location, OUT Rotation);
 
     FVector End = Location + Rotation.Vector() * MaxRange;
 
-    // Add line tracing
+    FCollisionQueryParams IgnoredActors;
+    IgnoredActors.AddIgnoredActor(this);
+    IgnoredActors.AddIgnoredActor(GetOwner());
+
     FHitResult HitResult;
-    bool bHitSuccess = GetWorld()->LineTraceSingleByChannel(OUT HitResult, Location, End, BulletCollisionChannel);
+    bool bHitSuccess = GetWorld()->LineTraceSingleByChannel(OUT HitResult, Location, End, BulletCollisionChannel, IgnoredActors);
     if (bHitSuccess)
     {
         // DrawDebugCamera(GetWorld(), OUT Location, OUT Rotation, 90, 2, FColor::Red, true);
