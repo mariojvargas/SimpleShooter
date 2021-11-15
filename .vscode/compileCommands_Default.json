@@ -103,5 +103,25 @@
         "file": "/Users/mario/Documents/Unreal Projects/SimpleShooter/Source/SimpleShooter/BTService_PlayerLocationIfSeen.cpp",
         "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default/SimpleShooter.191.rsp\"",
         "directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+    },
+    {
+        "file": "/Users/mario/Documents/Unreal Projects/SimpleShooter/Source/SimpleShooter/KillEmAllGameMode.h",
+        "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default/SimpleShooter.191.rsp\"",
+        "directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+    },
+    {
+        "file": "/Users/mario/Documents/Unreal Projects/SimpleShooter/Source/SimpleShooter/KillEmAllGameMode.cpp",
+        "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default/SimpleShooter.191.rsp\"",
+        "directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+    },
+    {
+        "file": "/Users/mario/Documents/Unreal Projects/SimpleShooter/Source/SimpleShooter/ShooterPlayerController.h",
+        "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default/SimpleShooter.191.rsp\"",
+        "directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+    },
+    {
+        "file": "/Users/mario/Documents/Unreal Projects/SimpleShooter/Source/SimpleShooter/ShooterPlayerController.cpp",
+        "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/mario/Documents/Unreal Projects/SimpleShooter/.vscode/compileCommands_Default/SimpleShooter.191.rsp\"",
+        "directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
     }
 ]
